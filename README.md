@@ -17,9 +17,17 @@ webpack-cli 3.3.10
 
 
 ### 项目初始化
-
+```js
 npm i  
 npm run start
+```
+
+### 调用接口数据
+
+```js
+npm install -g server-mock
+```
+本地桌面新建mock文件夹，将src/api路径下json文件拷贝到mock文件夹下，在mock文件夹路径下启用serve命令即可
 
 
 

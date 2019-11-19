@@ -15,7 +15,6 @@ const defaultState = fromJS({
 });
 
 const changeHomeData = (state, action) => {
-    console.log(state)
     return state.merge({
         topicList:  fromJS(action.topicList),
         articleList: fromJS(action.articleList),

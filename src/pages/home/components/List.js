@@ -6,19 +6,19 @@ import { Link } from 'react-router-dom';
 
 class List extends PureComponent {
     render() {
-        const { list, getMoreList, page } = this.props;
+        const { list } = this.props;
         return (
             <div>
                 {
                     list.map((item, index) => {
                         return (
                             <Link key={index} to={'/detail/' + item.get('id')}>
-                            <ListItem>
-                                <ListInfo>
-                                    <h3 className='title'>{item.get('title')}</h3>
-                                    <p className='desc'>{item.get('desc')}</p>
-                                </ListInfo>
-                            </ListItem>
+                                <ListItem>
+                                    <ListInfo>
+                                        <h3 className='title'>{item.get('title')}</h3>
+                                        <p className='desc'>{item.get('desc')}</p>
+                                    </ListInfo>
+                                </ListItem>
                             </Link>
                         )
                     })
